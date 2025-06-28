@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../img/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: right;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:hover {
+    color: #ff4d4d;
+}
+
+nav a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 1
+}
