@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NutriGaze</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/style.css') }}">
+    <style>
+        .button {
+    background-color: rgb(244, 244, 238);  /* Change from purple to yellow */
+    color: black;              /* Text color for contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: rgb(202, 181, 27);    /* Slightly darker on hover */
+    color: black;
+}
+.button {
+    position: absolute;
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);
+    top: 60%;   /* Pushes downward vertically */
+    
+    background-color: yellow;
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(241, 240, 234);
+}
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/" class="active">Home</a>
+    <a href="/about">About</a>
+    <a href="/predict">Predict</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<div class="container">
+    <p>Welcome to <b>NutriGaze</b></p>
+    <h1>GREENGUARD INSIGHTS</h1>
+    <p>We are a team of innovative scientists and technologists dedicated to ensuring your produce is always fresh and healthy.</p>
+    <a href="/predict" class="button" >GET STARTED</a>
+</div>
+
+</body>
+</html>

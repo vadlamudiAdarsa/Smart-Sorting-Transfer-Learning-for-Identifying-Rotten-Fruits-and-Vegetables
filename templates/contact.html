@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - NutriGaze</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/style.css') }}">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        nav {
+            margin-bottom: 30px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #388E3C;
+        }
+        .contact-container {
+            background-color: white;
+            padding: 30px;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: #2b2b2b;
+        }
+        .email, .phone {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .email span {
+            display: block;
+            color: rgb(100, 168, 190);
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About</a> |
+        <a href="/predict">Predict</a> |
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="email">
+            <strong style="color: red;">Email:</strong>
+            <span>vemireddythriveni1@gmail.com</span>
+            <span>bindumadurivandamsetty@gmail.com</span>
+            <span>adarsavadlamudi@gmail.com</span>
+            <span>dineshvalluri1323@gmail.com</span>
+        </div>
+        <div class="phone">
+            <strong>Phone:</strong> +91-XXXXXXXXXX
+        </div>
+    </div>
+
+</body>
+</html>
